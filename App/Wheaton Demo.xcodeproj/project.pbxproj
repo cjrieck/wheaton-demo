@@ -12,6 +12,7 @@
 		01959E4319D3898B00EC1C99 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01959E4219D3898B00EC1C99 /* ViewController.m */; };
 		01959E4819D3898B00EC1C99 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01959E4719D3898B00EC1C99 /* Images.xcassets */; };
 		01959E5719D3898B00EC1C99 /* Wheaton_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 01959E5619D3898B00EC1C99 /* Wheaton_DemoTests.m */; };
+		A32CFAB219D4FBBE001ABEF4 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A32CFAB119D4FBBE001ABEF4 /* SecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,8 @@
 		01959E5019D3898B00EC1C99 /* Wheaton DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wheaton DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		01959E5519D3898B00EC1C99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01959E5619D3898B00EC1C99 /* Wheaton_DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Wheaton_DemoTests.m; sourceTree = "<group>"; };
+		A32CFAB019D4FBBE001ABEF4 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		A32CFAB119D4FBBE001ABEF4 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,8 @@
 				01959E3F19D3898B00EC1C99 /* AppDelegate.m */,
 				01959E4119D3898B00EC1C99 /* ViewController.h */,
 				01959E4219D3898B00EC1C99 /* ViewController.m */,
+				A32CFAB019D4FBBE001ABEF4 /* SecondViewController.h */,
+				A32CFAB119D4FBBE001ABEF4 /* SecondViewController.m */,
 				01959E4719D3898B00EC1C99 /* Images.xcassets */,
 				01959E3A19D3898B00EC1C99 /* Supporting Files */,
 			);
@@ -211,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A32CFAB219D4FBBE001ABEF4 /* SecondViewController.m in Sources */,
 				01959E4319D3898B00EC1C99 /* ViewController.m in Sources */,
 				01959E4019D3898B00EC1C99 /* AppDelegate.m in Sources */,
 				01959E3D19D3898B00EC1C99 /* main.m in Sources */,
@@ -385,6 +391,7 @@
 				01959E5C19D3898B00EC1C99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		01959E5D19D3898B00EC1C99 /* Build configuration list for PBXNativeTarget "Wheaton DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -393,6 +400,7 @@
 				01959E5F19D3898B00EC1C99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

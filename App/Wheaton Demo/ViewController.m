@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "SecondViewController.h"
 
 @interface ViewController ()
 
@@ -25,6 +26,35 @@
     textLabel.textAlignment = NSTextAlignmentCenter;
     
     [self.view addSubview:textLabel];
+    
+    
+    UIView *purpleRectangle = [[UIView alloc] initWithFrame:CGRectMake(0.0f, 200.0f, 100.0f, 100.0f)];
+    purpleRectangle.backgroundColor = [UIColor purpleColor];
+    [self.view addSubview:purpleRectangle];
+    
+    [UIView animateWithDuration:5.0f
+                          delay:2.0f
+                        options:UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                         purpleRectangle.alpha = 0.0f;
+                     }
+                     completion:^(BOOL finished){
+                         textLabel.text = @"Yaasssssss";
+                     }];
+    
+    UIButton *pushButton = [[UIButton alloc] initWithFrame:CGRectMake(50, 150, 100, 50)];
+    pushButton.backgroundColor = [UIColor blueColor];
+    [pushButton addTarget:self action:@selector(goToNext) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:pushButton];
+    
+}
+
+- (void)goToNext
+{
+    SecondViewController *nextVC = [[SecondViewController alloc] init];
+    [self presentViewController:nextVC
+                       animated:YES
+                     completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {
